@@ -48,7 +48,7 @@
         <ul class="dropdown-menu dropdown-menu-list dropdown-menu-right">
           <li role="presentation" class="dropdown-header">Perfil</li>
           
-          <li><a href="configuracion"><i class="fa falist fa-gear"></i> Configuración </a></li>
+          <li><a href="{{route('configuracionPropietario')}}"><i class="fa falist fa-gear"></i> Configuración </a></li>
           <li class="divider"></li>
           <li><a href="{{ url('/logout') }}"><i class="fa falist fa-power-off"></i> Cerrar sesión</a></li>
         </ul>
@@ -67,7 +67,7 @@
     <li><a href="{{route('saldoPropietario')}}"><span class="icon color5"><i class="fa fa-money"></i></span>Saldo</a></li>
     <li><a href="{{route('pagosPropietario')}}"><span class="icon color7"><i class="fa fa-book"></i></span>Pagos</a></li>
     <li><a href="{{route('lectoresPropietario')}}"><span class="icon color7"><i class="fa fa-credit-card"></i></span>Lectores</a></li>
-    <li><a href="configuracion"><span class="icon color9"><i class="fa fa-user"></i></span>Configuración</a></li>   
+    <li><a href="{{route('configuracionPropietario')}}"><span class="icon color9"><i class="fa fa-user"></i></span>Configuración</a></li>   
   </ul>
   <ul class="sidebar-panel nav">
     <li><a href="{{ url('/logout') }}"><i class="fa fa-power-off"></i> Cerrar sesión</a></li>

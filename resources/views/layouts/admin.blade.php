@@ -66,7 +66,8 @@
     <li><a href="{{ route('tarjetasAdmin')}}"><span class="icon color7"><i class="fa fa-credit-card"></i></span>Tarjetas</a></li>
     <li><a href="{{ route('propietariosAdmin')}}"><span class="icon color7"><i class="fa fa-file-text-o"></i></span>Propietarios</a></li>
      <li><a href="{{ route('lectoresAdmin')}}"><span class="icon color7"><i class="fa fa-eye"></i></span>Lectores</a></li>
-    <li><a href="configuracion"><span class="icon color9"><i class="fa fa-user"></i></span>Configuración</a></li>   
+     <li><a href="{{ route('vendedoresAdmin')}}"><span class="icon color7"><i class="fa fa-money"></i></span>Vendedores</a></li>
+    <li><a href="{{route('configuracionAdmin')}}"><span class="icon color9"><i class="fa fa-user"></i></span>Configuración</a></li>   
   </ul>
   <ul class="sidebar-panel nav">
     <li><a href="{{ url('/logout') }}"><i class="fa fa-power-off"></i> Cerrar sesión</a></li>

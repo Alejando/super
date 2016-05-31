@@ -32,7 +32,7 @@
          @if(Session::has('message2'))
                <div class="kode-alert kode-alert-icon kode-alert-click alert5">
                     <i class="fa fa-warning"></i>
-                    <strong> {{ Session::get('message')}} </strong>
+                    <strong> {{ Session::get('message2')}} </strong>
                  </div>
         @endif
         
@@ -43,7 +43,7 @@
                 <div class="group{{ $errors->has('tarjeta') ? ' has-error' : '' }}">
                   <label class="col-sm-2 control-label form-label">Tarjeta</label>
                   <div class="col-sm-10">
-                    <input type="text" class="form-control" placeholder="10 digitos"name="tarjeta">
+                    <input type="text" class="form-control" placeholder="10 digitos" name="tarjeta">
                   </div>
                    @if ($errors->has('tarjeta'))
                         <span class="help-block">

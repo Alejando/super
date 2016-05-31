@@ -1,9 +1,9 @@
 @extends('layouts.admin')
 
-@section('tituloModulo') Propietarios
+@section('tituloModulo') Vendedores
 @endsection
 @section('opciones')
-   <a href="{{route('propietariosAdmin')}}" class="btn btn-light">Mostrar propietarios</a>
+   <a href="{{route('propietariosAdmin')}}" class="btn btn-light">Mostrar Vendedores</a>
 @endsection
  @section('contenido')
   <!-- Start Second Row -->
@@ -12,7 +12,7 @@
     <div class="col-md-12 col-lg-9">
       <div class="panel panel-widget" style="height:300;">
         <div class="panel-title">
-          Agregar Propietario
+          Agregar Vendedor
           <ul class="panel-tools">
             <li><a class="icon minimise-tool"><i class="fa fa-minus"></i></a></li>
             <li><a class="icon expand-tool"><i class="fa fa-expand"></i></a></li>
@@ -20,7 +20,7 @@
           </ul>
         </div>
 
-       <form class="form-horizontal" role="form" method="POST" action="{{ route('guardarPropietario') }}">
+       <form class="form-horizontal" role="form" method="POST" action="{{ route('guardarVendedor') }}">
         <div class="top">
          {!! csrf_field() !!}  
           
@@ -46,7 +46,7 @@
           </div>
           
             <div class="pull-right">
-              <button type="submit" class="btn btn-success ">Guardar propietario</button>
+              <button type="submit" class="btn btn-success ">Guardar Vendedor</button>
             </div>
         </div>
       </form>

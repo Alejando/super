@@ -48,7 +48,7 @@
         <ul class="dropdown-menu dropdown-menu-list dropdown-menu-right">
           <li role="presentation" class="dropdown-header">Perfil</li>
           
-          <li><a href="configuracion"><i class="fa falist fa-gear"></i> Configuración </a></li>
+          <li><a href="{{route('configuracionUsuario')}}"><i class="fa falist fa-gear"></i> Configuración </a></li>
           <li class="divider"></li>
           <li><a href="{{ url('/logout') }}"><i class="fa falist fa-power-off"></i> Cerrar sesión</a></li>
         </ul>
